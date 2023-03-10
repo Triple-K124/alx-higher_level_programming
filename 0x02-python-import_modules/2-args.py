@@ -5,13 +5,13 @@ if __name__ == "__main__":
 
 import sys
 
-args = sys.argv[1:]
-num_args = len(args)
+count = len(sys.argv) - 1
 
-if num_args == 0:
-    print("Number of argument(s): 0.")
-    print(".")
+if count == 0:
+    print("0 arugments.")
+elif count == 1:
+    print("1 argument:")
 else:
-    print("argument(s): {}.".format(num_args))
-    for i, arg in enumerate(args):
-        print("{}: {}".format(i+1, arg))
+    print("{} arguments:".format(count))
+for i in range(count):
+    print("{}: {}".format(i+1, sys.argv[i + 1]))
