@@ -12,7 +12,6 @@ if num_args == 0:
     print("Number of argument(s): 0.")
     print(".")
 else:
-    print("Number of argument(s): {}.".format(num_args))
-    print("Arguments:")
+    print("argument(s): {}.".format(num_args))
     for i, arg in enumerate(args):
         print("{}: {}".format(i+1, arg))
