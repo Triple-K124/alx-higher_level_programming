@@ -5,5 +5,5 @@ def print_reversed_list_integer(my_list=[]):
 
     my_list.reverse()  # Reverse the list in place
     for rev in my_list:
-        print("{:d}\n".format(rev)) #Print each reversed integer
+        print("{:d}".format(rev)) #Print each reversed integer
  
